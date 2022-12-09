@@ -8,7 +8,8 @@ class FlickPortraitControls extends StatelessWidget {
       this.iconSize = 20,
       this.fontSize = 12,
       this.progressBarSettings,
-      this.onTap, this.closeFullScreen})
+      this.onTap,
+      this.closeFullScreen})
       : super(key: key);
 
   /// Icon size.
@@ -118,16 +119,18 @@ class FlickPortraitControls extends StatelessWidget {
         SafeArea(
           child: Align(
             alignment: Alignment.topLeft,
-            child: Padding(padding: EdgeInsets.all(10),child: IconButton(
-                onPressed: ,
-                icon: CircleAvatar(
-                  radius: 23,
-                  backgroundColor: Colors.grey.withOpacity(0.50),
-                  child: Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
-                  ),
-                ))),
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: IconButton(
+                    onPressed: closeFullScreen,
+                    icon: CircleAvatar(
+                      radius: 23,
+                      backgroundColor: Colors.grey.withOpacity(0.50),
+                      child: Icon(
+                        Icons.arrow_back,
+                        color: Colors.white,
+                      ),
+                    ))),
           ),
         ),
       ],
